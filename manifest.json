@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Currency converter",
+    "version": "1.0.0",
+    "description": "Convert currency in selection",
+    "short_name": "Currency converter",
+    "permissions": ["activeTab", "storage", "<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "css": ["styles.css"],
+        "js": ["script.js"]
+      }
+    ],
+    "browser_action": {
+      "default_title": "Covert a currency on text selection",
+      "default_popup": "popup.html"
+    }
+   }
